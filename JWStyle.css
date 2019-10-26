@@ -2,7 +2,20 @@
 
 -------------------------------- Contents --------------------------------------
 
-1. Index.html
+1. General
+2. Index.html
+
+*/
+
+/*
+
+-------------------------------- General ---------------------------------------
+
+*/
+
+* {
+  box-sizing: border-box;
+}
 
 /*
 
@@ -12,4 +25,8 @@
 
 #logo {
   max-width: 15%;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
 }
