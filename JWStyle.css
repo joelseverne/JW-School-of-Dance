@@ -23,10 +23,10 @@
 
 */
 
-#logo {
-  max-width: 15%;
+.logo {
+  max-height: 50px;
 }
 
-h1 {
-  font-family: 'Dancing Script', cursive;
+#BioPic {
+  max-width: 100vw;
 }

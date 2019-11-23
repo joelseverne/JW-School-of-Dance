@@ -1,0 +1,167 @@
+// ******************************
+// End of Basic styling
+// ******************************
+
+// Flexbox wrapper
+.flexbox{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	height: 100vw;
+
+  &:hover{
+    img {
+      opacity:0.28;
+    }
+  }
+
+  // Each flex item
+  .item{
+    position:relative;
+    width: 33.33%;  // 3 column
+    img{
+      width: 100%;
+      display: block;
+      transition:all .8s;
+    }
+    .title{
+      position:absolute;
+      top:48%;
+      left:0;
+      width:100%;
+      padding:0 3%;
+      font-size:30px;
+      text-shadow:0 0 8px rgba(0,0,0,0.42);
+    }
+    &:hover{
+      img{
+        opacity:1;
+      }
+    }
+  }
+}
+
+// Mediaqueries
+@media ( max-width : 860px ){
+  // set to 2 column
+  .flexbox{
+    height:220vw;
+    .item{
+      width:50%;
+    }
+  }
+}
+@media ( max-width : 667px ){
+  // set to 1 column
+  .flexbox{
+    height:auto;
+    .item{
+      width:100%;
+    }
+  }
+}
+
+/*******/
+
+* {
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.boldText {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.demo-layout-transparent {
+  background: url('imgs/ss/ss-1-min.jpg') center / cover;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+}
+
+.demo-card-wide.mdl-card {
+  width: 512px;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url('imgs/blog/blog7-1-min.png') center / cover;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+
+.material-icons {
+border: solid 2px;
+box-shadow: 1px 2px 2px 0px black;
+background-color: inherit;
+
+}
+
+.landscape {
+  max-height: 100vh
+}
+
+.menu {
+  font-size: 40px;
+}
+
+
+ /* Arrow */
+
+ .scroll-down {
+  visibility: hidden;
+	position: absolute;
+	left: 50%;
+	bottom: 10px;
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	z-index: 100;
+	text-decoration: none;
+	text-shadow: 0;
+  width: 13px;
+  height: 13px;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  z-index: 9;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%) rotate(45deg);
+  -moz-transform: translate(-50%, 0%) rotate(45deg);
+  transform: translate(-50%, 0%) rotate(45deg);
+	-webkit-animation: fade_move_down 4s ease-in-out infinite;
+	-moz-animation:    fade_move_down 4s ease-in-out infinite;
+	animation:         fade_move_down 4s ease-in-out infinite;
+}
+
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes fade_move_down {
+  0%   { -webkit-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -webkit-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+}
+@-moz-keyframes fade_move_down {
+  0%   { -moz-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -moz-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+}
+@keyframes fade_move_down {
+  0%   { transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
+}
+
+@media (min-width: 400px) {
+
+  .scroll-down {
+    visibility: visible;
+  }
+
+}
