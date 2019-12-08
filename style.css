@@ -2,11 +2,11 @@
 
 * {
   box-sizing: border-box;
-  font-family: 'Quicksand', sans-serif;
+  /* font-family: 'Quicksand', sans-serif; */
 }
 
 .boldText {
-  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
 }
 
 .pageTitle {
@@ -153,6 +153,7 @@ blockquote::after {
 .blogButtonWrapper {
   text-align: center;
 }
+
 
 button:focus,
 button:active {
