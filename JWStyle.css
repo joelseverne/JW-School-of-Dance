@@ -1,26 +1,36 @@
 /*
-
 -------------------------------- Contents --------------------------------------
 
 1. General
-2. Index.html
+2. index.html
+3. classes.html
+4. contact.html
 
-*/
-
-/*
 
 -------------------------------- General ---------------------------------------
-
 */
 
-* {
-  box-sizing: border-box;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.reviewText,
+.bioIntro {
+  font-family: 'Bebas Neue', cursive;
 }
 
+p,
+form,
+li {
+  font-family: 'Roboto', sans-serif;
+}
+
+
 /*
-
--------------------------------- Index.html ------------------------------------
-
+-------------------------------- index.html ------------------------------------
 */
 
 .logo {
@@ -29,4 +39,33 @@
 
 #BioPic {
   max-width: 100vw;
+}
+
+.bioIntro {
+  font-size: 1.5em;
+}
+
+.reviewText {
+  font-size: 1.5em;
+}
+
+/*
+-------------------------------- classes.html ------------------------------------
+*/
+
+#classesList {
+  /* padding-left: 0; */
+}
+
+.video {
+  width: 100vw
+}
+/*
+-------------------------------- classes.html ---------------------------------
+*/
+
+#contactLogo {
+  max-width: 60%;
+  text-align: center;
+  margin: auto;
 }
